@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/versus2"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="iOS 11"
+                android:textColor="#64DD17"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0 mil"
+                android:id="@+id/plusOneMillioniOS"
+                android:textColor="#64DD17"
+                android:textSize="50sp" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:onClick="addOneMillionforiOS"
+                android:text="+1 mil device sold"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/statistics"
+                android:onClick="addOneProcentforiOS"
+                android:text="+1% market share" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="ANDROID Oreo"
+                android:textColor="#616161"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0 mil"
+                android:id="@+id/plusOneMillionAndroid"
+                android:textColor="#64DD17"
+                android:textSize="50sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="12dp"
+                android:background="@android:color/transparent"
+                android:onClick="addOneMillionforAndroid"
+                android:text="+1 mil device sold"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="190dp"
+
+                android:background="@drawable/statistics2"
+                android:onClick="addOneProcentforAndroid"
+                android:text="+1% marker share" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+
+        android:layout_marginBottom="0dp"
+        android:onClick="resetAll"
+        android:text="new operating system"
+        android:id="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        app:srcCompat="@drawable/iosandroid2" />
+
+    <TextView
+        android:id="@+id/iOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_gravity="center"
+        android:layout_marginStart="85dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="24dp"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textColor="#64DD17"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/iOS"
+        android:text="%"
+
+        android:textColor="#64DD17"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/linearLayout"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/iOS"
+        android:layout_marginLeft="180dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="24dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+
+        android:layout_toEndOf="@+id/android"
+
+        android:text="%"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+</RelativeLayout>
